@@ -20,8 +20,8 @@ header('Content-type: text/html; charset=utf-8');
 		case 'edit.php':
 
 			break;
-		case 'delete.php':
-		
+		case 'delete':
+			require 'delete.php';
 			break;
 		default:
 			echo "Error 404";
