@@ -1,12 +1,4 @@
-<!doctype html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<link href="css/gallery.css" media="screen, projection" rel="stylesheet" type="text/css" />
-	<link rel="stylesheet" href="css/jcarousel.responsive.css" />
-	<title>Gallery base</title>
-</head>
-<body>
+
 	<div class="reviews">
 		<h2 class="reviews_header">Epic Gallery</h2>
         <div class="wrapper">
@@ -53,5 +45,3 @@
 	<script src="js/jquery-1.10.2.min.js"></script>
 	<script src="js/jquery.jcarousel.min.js"></script>
 	<script src="js/gallery.js"></script>
-</body>
-</html>

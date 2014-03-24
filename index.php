@@ -5,13 +5,17 @@ header('Content-type: text/html; charset=utf-8');
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<link href="css/gallery.css" media="screen, projection" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="css/jcarousel.responsive.css" />
+	<title>Gallery base</title>
 </head>
 <body>
 	<?php 
 	$action = isset($_GET['action']) ? htmlentities($_GET['action']) : 0;
 	switch($action){
-		case 'list.php':
+		case 'list':
+			require_once('gallery.php');
+			require_once('list.php');
 
 			break;
 		case 'add':
@@ -24,7 +28,8 @@ header('Content-type: text/html; charset=utf-8');
 		
 			break;
 		default:
-			echo "Error 404";
+			require_once('gallery.php');
+			require_once('list.php');
 			break;
 	}
 	 ?>
