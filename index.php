@@ -14,8 +14,8 @@ header('Content-type: text/html; charset=utf-8');
 		case 'list.php':
 
 			break;
-		case 'add.php':
-
+		case 'add':
+			require 'form.php';
 			break;
 		case 'edit.php':
 
